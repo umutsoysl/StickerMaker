@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context="com.stickers.laks.whatssappforsticker.Activity.MainActivity">
+
+    <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/white">
+
+        <ImageButton
+                android:id="@+id/shareApp"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/sharebtn" />
+
+        <ImageButton
+                android:id="@+id/addStickerPath"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/addbtn" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Sticker Maker"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:textSize="17dp"
+                android:textColor="@color/textColor" />
+
+    </RelativeLayout>
+    <ImageView
+            android:id="@+id/imageView173"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_below="@+id/toolbar"
+            android:background="@drawable/toolbarshadow" />
+
+  <ListView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="6dp"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:id="@+id/stickerList"></ListView>
+
+</RelativeLayout>

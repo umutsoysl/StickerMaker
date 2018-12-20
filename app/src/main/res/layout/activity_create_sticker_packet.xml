@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context="com.stickers.laks.whatssappforsticker.Activity.CreateStickerPacket">
+
+    <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/white">
+
+
+        <ImageButton
+                android:id="@+id/backPage"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_btn" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Create Sticker"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:textSize="17dp"
+                android:textColor="@color/textColor" />
+
+    </RelativeLayout>
+    <ImageView
+            android:id="@+id/imageView173"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_below="@+id/toolbar"
+            android:background="@drawable/toolbarshadow" />
+
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/stickerHeaderIcon"
+                        android:layout_below="@+id/imageView173"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/message_button"
+                        android:layout_centerHorizontal="true">
+
+            <ImageView android:layout_width="70dp"
+                       android:layout_height="70dp"
+                       android:id="@+id/setImage"
+                       android:layout_centerVertical="true"
+                       android:layout_centerHorizontal="true"/>
+
+            <ImageView android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:layout_margin="25dp"
+                       android:id="@+id/choose_image"
+                       android:background="@drawable/choose_image"/>
+        </RelativeLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_below="@+id/stickerHeaderIcon"
+                  android:layout_centerHorizontal="true"
+                  android:text="Sticker Header Icon"
+                  android:id="@+id/headerTextHint"
+                  android:layout_marginBottom="2dp"
+                  android:textColor="@color/textColor"
+        />
+
+    <GridView
+            android:id="@+id/myStickerList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_below="@+id/headerTextHint"
+            android:columnWidth="100dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="24dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="spacingWidthUniform"
+    />
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context="com.stickers.laks.whatssappforsticker.Activity.Choose_image_crop">
+
+    <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/white">
+
+
+        <ImageButton
+                android:id="@+id/backPage"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_btn" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Create Sticker"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:textSize="17dp"
+                android:textColor="@color/textColor" />
+
+    </RelativeLayout>
+    <ImageView
+            android:id="@+id/imageView173"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_below="@+id/toolbar"
+            android:background="@drawable/toolbarshadow" />
+
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ae030303"
+                    android:padding="16dp"
+                    android:id="@+id/warn"
+                    android:layout_below="@+id/toolbar">
+        <ImageView android:layout_width="22dp"
+                   android:layout_height="22dp"
+                   android:layout_centerVertical="true"
+                   android:background="@drawable/info"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:layout_marginLeft="36dp"
+                  android:text="Draw an outline  with your finger to select sticker area."
+        />
+
+    </RelativeLayout>
+
+    <com.alexvasilkov.gestures.views.GestureImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageCropView"
+            android:layout_gravity="center"
+            android:layout_above="@+id/butunPanel"
+            android:layout_below="@+id/warn">
+    </com.alexvasilkov.gestures.views.GestureImageView>
+
+
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:id="@+id/butunPanel"
+                  android:layout_marginLeft="16dp"
+                  android:layout_marginRight="16dp"
+                  android:layout_marginBottom="16dp"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true"
+                  android:layout_below="@+id/stickerName"
+                  android:layout_marginTop="16dp">
+
+       <RelativeLayout android:layout_width="wrap_content"
+                       android:layout_weight="1"
+                       android:layout_marginRight="5dp"
+                       android:background="@drawable/button_bg"
+                       android:id="@+id/freeHandBtn"
+                       android:layout_height="wrap_content">
+           <ImageView android:layout_width="28dp"
+                      android:layout_height="28dp"
+                      android:layout_centerHorizontal="true"
+                      android:background="@drawable/cut"
+                      android:layout_marginBottom="5dp"
+                      android:layout_marginRight="10dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginLeft="10dp"
+                      android:id="@+id/im1"  />
+           <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:layout_below="@+id/im1"
+                     android:textSize="10dp"
+                     android:layout_centerHorizontal="true"
+                     android:text="Freehand"
+                     android:layout_marginBottom="10dp"
+                     android:textColor="@color/textColor"/>
+       </RelativeLayout>
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/cutSquare"
+                        android:background="@drawable/buttonshapegray"
+                        android:layout_height="wrap_content">
+            <ImageView android:layout_width="28dp"
+                       android:layout_height="28dp"
+                       android:layout_marginRight="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="10dp"
+                       android:background="@drawable/crop"
+                       android:layout_marginBottom="5dp"
+                       android:layout_centerHorizontal="true"
+                       android:id="@+id/im2"  />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_below="@+id/im2"
+                      android:textSize="10dp"
+                      android:layout_centerHorizontal="true"
+                      android:text="Cut Square"
+                      android:layout_marginBottom="10dp"
+                      android:textColor="@color/textColor"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshapegray"
+                        android:id="@+id/cutCircle"
+                        android:layout_marginRight="16dp"
+                        android:layout_height="wrap_content">
+            <ImageView android:layout_width="28dp"
+                       android:layout_height="28dp"
+                       android:layout_marginRight="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="10dp"
+                       android:layout_centerHorizontal="true"
+                       android:background="@drawable/circle_crop"
+                       android:layout_marginBottom="5dp"
+                       android:id="@+id/im3"  />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_below="@+id/im3"
+                      android:textSize="10dp"
+                      android:text="Cut Circle"
+                      android:layout_marginBottom="10dp"
+                      android:layout_centerHorizontal="true"
+                      android:textColor="@color/textColor"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshapegray"
+                        android:id="@+id/chooseImage"
+                        android:layout_height="wrap_content">
+            <ImageView android:layout_width="28dp"
+                       android:layout_height="28dp"
+                       android:layout_centerHorizontal="true"
+                       android:background="@drawable/galery"
+                       android:layout_marginBottom="5dp"
+                       android:layout_marginRight="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="10dp"
+                       android:id="@+id/im4"  />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_below="@+id/im4"
+                      android:textSize="10dp"
+                      android:text="Change Image"
+                      android:layout_marginBottom="10dp"
+                      android:layout_centerHorizontal="true"
+                      android:textColor="@color/textColor"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
