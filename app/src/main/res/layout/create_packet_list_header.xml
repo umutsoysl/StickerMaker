@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
+
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/stickerHeaderIcon"
+                    android:layout_below="@+id/imageView173"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/message_button"
+                    android:layout_centerHorizontal="true">
+
+        <ImageView android:layout_width="85dp"
+                   android:layout_height="85dp"
+                   android:id="@+id/setImage"
+                   android:layout_centerVertical="true"
+                   android:layout_centerHorizontal="true"/>
+
+        <ImageView android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_margin="35dp"
+                   android:id="@+id/choose_image"
+                   android:background="@drawable/choose_image"/>
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="3dp"
+                        android:background="@drawable/button_bg">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="@color/white"
+                      android:layout_centerVertical="true"
+                      android:layout_centerHorizontal="true"
+                      android:id="@+id/number"
+                      android:textSize="10dp"
+                      android:text="tray icon"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

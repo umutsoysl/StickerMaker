@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
-        tools:context="com.stickers.laks.whatssappforsticker.Activity.Choose_image_crop">
+        tools:context="com.stickers.laks.whatssappforsticker.Activity.DrawImage">
 
     <RelativeLayout
             android:id="@+id/toolbar"

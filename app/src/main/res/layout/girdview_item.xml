@@ -1,37 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="wrap_content"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
                 android:paddingBottom="10dp"
                 android:background="@color/white"
                 android:layout_height="wrap_content">
 
-    <ImageButton android:layout_width="30dp" android:layout_height="30dp"
-                 android:background="@drawable/close_red"
-                 android:layout_toRightOf="@+id/stickerHeaderIcon"
-                 android:id="@+id/removeImage"
-                 android:layout_marginTop="7dp"/>
-
     <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:id="@+id/stickerHeaderIcon"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginRight="-10dp"
                     android:background="@drawable/message_button"
                     android:layout_centerHorizontal="true">
-        <ImageView  android:layout_width="65dp"
-                    android:layout_height="65dp"
+        <ImageView  android:layout_width="77dp"
+                    android:layout_height="77dp"
                    android:id="@+id/setImage"
                    android:layout_centerVertical="true"
                    android:layout_centerHorizontal="true"/>
 
         <ImageView android:layout_width="30dp"
                    android:layout_height="30dp"
-                   android:layout_margin="25dp"
+                   android:layout_margin="30dp"
                    android:id="@+id/choose_image"
                    android:background="@drawable/choose_image"/>
+
+        <RelativeLayout android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_bg">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="@color/white"
+                      android:layout_centerVertical="true"
+                      android:layout_centerHorizontal="true"
+                      android:id="@+id/number"
+                      android:text="1"/>
+
+        </RelativeLayout>
     </RelativeLayout>
+
+    <RelativeLayout android:layout_width="40dp"
+                    android:layout_toRightOf="@+id/stickerHeaderIcon"
+                    android:id="@+id/deleteImage"
+                    android:layout_marginTop="2dp"
+                    android:clickable="true"
+                    android:layout_height="40dp">
+        <ImageButton android:layout_width="23dp" android:layout_height="23dp"
+                     android:background="@drawable/close_red"
+                     android:id="@+id/removeImage"
+                     android:layout_alignParentRight="true"
+                     android:layout_marginTop="5dp"
+                     android:clickable="false"
+                     android:layout_marginRight="3dp"
+                     android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+
+
 
 
 

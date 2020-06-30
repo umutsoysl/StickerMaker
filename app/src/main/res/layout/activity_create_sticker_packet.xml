@@ -37,6 +37,19 @@
                 android:textColor="@color/textColor" />
 
     </RelativeLayout>
+
+
+    <in.srain.cube.views.GridViewWithHeaderAndFooter
+            android:id="@+id/myStickerList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_below="@+id/toolbar"
+            android:columnWidth="100dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+    />
+
     <ImageView
             android:id="@+id/imageView173"
             android:layout_width="fill_parent"
@@ -44,46 +57,53 @@
             android:layout_below="@+id/toolbar"
             android:background="@drawable/toolbarshadow" />
 
-        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:id="@+id/stickerHeaderIcon"
-                        android:layout_below="@+id/imageView173"
-                        android:layout_marginBottom="1dp"
-                        android:background="@drawable/message_button"
-                        android:layout_centerHorizontal="true">
-
-            <ImageView android:layout_width="70dp"
-                       android:layout_height="70dp"
-                       android:id="@+id/setImage"
-                       android:layout_centerVertical="true"
-                       android:layout_centerHorizontal="true"/>
-
-            <ImageView android:layout_width="30dp"
-                       android:layout_height="30dp"
-                       android:layout_margin="25dp"
-                       android:id="@+id/choose_image"
-                       android:background="@drawable/choose_image"/>
-        </RelativeLayout>
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                  android:layout_below="@+id/stickerHeaderIcon"
-                  android:layout_centerHorizontal="true"
-                  android:text="Sticker Header Icon"
-                  android:id="@+id/headerTextHint"
-                  android:layout_marginBottom="2dp"
-                  android:textColor="@color/textColor"
-        />
-
-    <GridView
-            android:id="@+id/myStickerList"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_below="@+id/headerTextHint"
-            android:columnWidth="100dp"
-            android:numColumns="auto_fit"
-            android:verticalSpacing="24dp"
-            android:horizontalSpacing="10dp"
-            android:stretchMode="spacingWidthUniform"
+    <ProgressBar
+            android:id="@+id/entry_activity_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
     />
+
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:id="@+id/addWhatsApp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="30dp"
+            android:shadowColor="#d7d6d6"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/addstickerbtn_bg">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Add WhatsApp"
+                android:id="@+id/btn_parent_top"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_centerInParent="true"
+                android:textSize="17dp"
+                android:textColor="#ffffff"/>
+
+        <ImageButton
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_toLeftOf="@+id/btn_parent_top"
+                android:layout_marginLeft="16dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/addbtn_white" />
+
+    </RelativeLayout>
+
 
 </RelativeLayout>

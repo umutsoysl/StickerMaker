@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Add Sticker"
+                android:text="Create Sticker"
                 android:id="@+id/btn_parent_top"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"

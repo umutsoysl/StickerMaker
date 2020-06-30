@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "818111818475",
+    "firebase_url": "https://stickermaker-7060f.firebaseio.com",
+    "project_id": "stickermaker-7060f",
+    "storage_bucket": "stickermaker-7060f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818111818475:android:63cb6a9ad3bb935b",
+        "android_client_info": {
+          "package_name": "com.stickers.laks.whatssappforsticker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818111818475-aitdj16leeabpnkmip53v6oln7iqmg4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC48pbeWChtl5R_C5jyzTi60p8z7c9nev8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
